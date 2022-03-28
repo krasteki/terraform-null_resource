@@ -12,7 +12,9 @@ provider "null" {
 }
 
 resource "null_resource" "VM-01" {
+    count = 3
   provisioner "local-exec" {
-    command = "echo Hello"
+    command = "echo Hello from VM ${count.index}"
   }
 }
+

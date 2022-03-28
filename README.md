@@ -3,6 +3,8 @@
 The purpose is to explore the `Null Provider` in Terraform.
 The `null_resource` resource implements the standard resource lifecycle but takes no further action.
 
+Used `count` and `count.index`
+
 #### Prerequisites
 
 The [Terraform CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli), version used 1.1.6
