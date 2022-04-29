@@ -13,7 +13,7 @@ provider "null" {
 
 resource "null_resource" "VM-01" {    
   provisioner "local-exec" {
-    command = "which aws"
+    command = "free -m"
   }
 }
 
