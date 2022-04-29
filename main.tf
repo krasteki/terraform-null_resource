@@ -11,10 +11,9 @@ provider "null" {
   # Configuration options
 }
 
-resource "null_resource" "VM-01" {
-    count = 3
+resource "null_resource" "VM-01" {    
   provisioner "local-exec" {
-    command = "echo Hello from VM ${count.index}"
+    command = "which aws"
   }
 }
 
