@@ -19,6 +19,6 @@ resource "null_resource" "VM-01" {
 
 resource "null_resource" "VM-02" {    
   provisioner "local-exec" {
-    command = "cat etc/os-release"
+    command = "cat /etc/os-release"
   }
 }
